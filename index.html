@@ -1,0 +1,339 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Clear's Blog - 个人博客</title><meta name="author" content="Clear"><meta name="copyright" content="Clear"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Clear&#39;s Blog">
+<meta property="og:url" content="https://www.clears.top/index.html">
+<meta property="og:site_name" content="Clear&#39;s Blog">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://hexo-1311224163.cos.ap-chengdu.myqcloud.com/img%20(1).jpg">
+<meta property="article:author" content="Clear">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hexo-1311224163.cos.ap-chengdu.myqcloud.com/img%20(1).jpg"><link rel="shortcut icon" href="https://hexo-1311224163.cos.ap-chengdu.myqcloud.com/favicon.png"><link rel="canonical" href="https://www.clears.top/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"自从上一次更新已经有","messageNext":"天了，文章的内容可能已经过时。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Clear\'s Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-03-11 22:28:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://hexo-1311224163.cos.ap-chengdu.myqcloud.com/img%20(1).jpg" onerror="onerror=null;src='https://hexo-1311224163.cos.ap-chengdu.myqcloud.com/404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/dynamic/"><i class="fa-fw fas fa-list-alt"></i><span> 动态</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Clear's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/dynamic/"><i class="fa-fw fas fa-list-alt"></i><span> 动态</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Clear's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/posts/5fc2235e/" title="StarUML教程"><img class="post_bg" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230123183604.png" onerror="this.onerror=null;this.src='https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230109220048.png'" alt="StarUML教程"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/5fc2235e/" title="StarUML教程">StarUML教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-22T08:00:00.000Z" title="发表于 2023-01-22 16:00:00">2023-01-22</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-23T10:36:21.197Z" title="更新于 2023-01-23 18:36:21">2023-01-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/uml/">uml</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/%E7%A0%B4%E8%A7%A3/">破解</a></span></div><div class="content">StarUML教程1.下载安装StarUML官网下载
+下载好后双击安装，默认安装在C:\Program Files\StarUML
+
+2.破解软件使用npm全局安装asar工具
+1$ npm install -g @electron/asar
+将C:\Program Files\StarUML\resources路径下的app.asar复制到除C盘外的随便一个磁盘的文件夹中，输入下面这条命令，作用是将当前目录下的app.asar解压到子目录app下
+1$ asar extract app.asar app
+
+使用Vscode打开app文件夹，找到app/src/engine/license-manager.js，将其中的checkLicenseValidity函数进行修改
+123456789101112checkLicenseValidity () &#123;  if (packageJSON.config.setappBuild) &#123;    setStatus(this, true)  &#125; else &#123;    this.validate().then( ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/82734d8/" title="Linux命令"><img class="post_bg" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230121221145.png" onerror="this.onerror=null;this.src='https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230109220048.png'" alt="Linux命令"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/82734d8/" title="Linux命令">Linux命令</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-20T16:00:00.000Z" title="发表于 2023-01-21 00:00:00">2023-01-21</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-25T07:16:41.335Z" title="更新于 2023-01-25 15:16:41">2023-01-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">常用命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/linux/">linux</a></span></div><div class="content">Linux命令基本命令1.立刻关机 shutdown now
+2.立刻重启 reboot now
+3.删除文件夹 rm -rf 文件夹名字
+4.解压gz压缩包到指定文件夹 tar -zxvf xxx.tar.gz -C /home/
+5.解压zip压缩包到当前文件夹 unzip xxx.zip 
+6.vim命令
+:w 保存文件但不退出vi:w file 将修改另外保存到file中，不退出vi:w! 强制保存，不推出vi:wq 保存文件并退出vi:wq! 强制保存文件，并退出vi:q 不保存文件，退出vi:q! 不保存文件，强制退出vi:e! 放弃所有修改，从上次保存文件开始再编辑命令历史
+7.同步系统的软件包列表 apt update
+8.升级系统软件包版本 apt upgrade
+9.查看可升级的软件包版本 apt list —upgradable
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/caff8000/" title="Git常用命令"><img class="post_bg" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230121214739.png" onerror="this.onerror=null;this.src='https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230109220048.png'" alt="Git常用命令"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/caff8000/" title="Git常用命令">Git常用命令</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-18T16:00:00.000Z" title="发表于 2023-01-19 00:00:00">2023-01-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-27T09:27:45.194Z" title="更新于 2023-01-27 17:27:45">2023-01-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">常用命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/git/">git</a></span></div><div class="content">Git常用命令Git安装下载git的exe安装包官网下载：https://git-scm.com/download/win
+淘宝镜像源下载：https://registry.npmmirror.com/binary.html?path=git-for-windows/
+安装git除了最开始选择安装组件那里建议不勾选添加那几个到右键菜单外，其余全部默认。
+汉化Git Bash打开git bash
+右键——Options——Window——UI language——选择zh_CN
+然后点击Apply，Save，再次右键就能发现已经是中文了。
+设置用户签名12$ git config --global user.name &quot;XXX&quot; # 设置用户名$ git config --global user.email &quot;XXXX&quot; # 设置邮箱
+说明：
+签名的作用是区分不同操作者身份。用户的签名信息在每一个版本的提交信息中能够看到，以此确认本次提交是谁做的。Git 首次安装必须设置一下用户签名，否则无法提交代码。
+注意：这里设置用户签名和将来登录 GitHu ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/38dd7363/" title="Vmware部署Ubuntu 20.04 Server"><img class="post_bg" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230121212414.png" onerror="this.onerror=null;this.src='https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230109220048.png'" alt="Vmware部署Ubuntu 20.04 Server"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/38dd7363/" title="Vmware部署Ubuntu 20.04 Server">Vmware部署Ubuntu 20.04 Server</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-18T16:00:00.000Z" title="发表于 2023-01-19 00:00:00">2023-01-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-01T06:37:54.614Z" title="更新于 2023-03-01 14:37:54">2023-03-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2/">项目部署</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="article-meta-link">•</span><a class="article-meta__tags" href="/tags/Vmware/">Vmware</a></span></div><div class="content">服务器搭建教程1.下载安装Vmware虚拟机官方下载Download VMware Workstation Pro
+Vmware 17PRO激活密钥4C21U-2KK9Q-M8130-4V2QH-CF810（无限制使用）
+2.下载Linux镜像镜像下载地址
+centos-8-stream-isos-x8664安装包下载开源镜像站-阿里云 (aliyun.com)
+Ubuntu 20.04 server版镜像
+这里我选择的是ubuntu，因为它更适合搭配docker使用，而我主要就是用docker来搭建各种服务，所以选择了它。
+3.安装虚拟机服务器（Ubuntu版）1.选择自定义安装
+
+2.默认下一步
+
+3.选择稍后安装操作系统
+
+4.选择Linux，版本选择Ubuntu 64位
+
+5.默认下一步
+
+6.这里有说法，处理器数量*处理器内核总数 &lt;= 自己电脑CPU的逻辑处理器数量（任务管理器可以看），我这里选择自己CPU内核总数的一半
+
+7.这里内存我选择自己电脑内存的一半
+
+8.后面一路默认，直到分配磁盘容量，建议30个G
+
+9.后面也是一路默认，到自定义硬件时，点开新CD/DV ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/33f59116/" title="Typora常用命令"><img class="post_bg" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230109110509.png" onerror="this.onerror=null;this.src='https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230109220048.png'" alt="Typora常用命令"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/33f59116/" title="Typora常用命令">Typora常用命令</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-09T04:00:00.000Z" title="发表于 2023-01-09 12:00:00">2023-01-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-21T13:51:24.928Z" title="更新于 2023-01-21 21:51:24">2023-01-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">常用命令</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/typora/">typora</a></span></div><div class="content">分两个部分来记录一下使用typora来写文章的一些语法。
+Markdown语法自带格式代码块1ctrl+shift+k
+多级标题123456# H1## H2### H3#### H4##### H5###### H6
+文字样式标签语法渲染演示123456789101112131415&lt;u&gt;下划线演示&lt;/u&gt;文字**加粗**演示文字*斜体*演示文本`高亮`演示文本~~删除~~线演示&lt;font size = 5&gt;5号字&lt;/font&gt;&lt;font face=&quot;黑体&quot;&gt;黑体&lt;/font&gt;&lt;font color=blue&gt;蓝色&lt;/font&gt;&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=MistyRose&gt;这里的背景色是：MistyRosen，此处输入任意想输入的内容&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;下划线演示
+文字加粗演示
+文字斜体演示
+文本高亮演示
+文本删除线演示
+5号字
+黑体
+蓝色
+
+这里的背景色是：Mi ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://hexo-1311224163.cos.ap-chengdu.myqcloud.com/img%20(1).jpg" onerror="this.onerror=null;this.src='https://hexo-1311224163.cos.ap-chengdu.myqcloud.com/404.gif'" alt="avatar"/></div><div class="author-info__name">Clear</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Haidaishaoyu"><i class="fab fa-github"></i><span>我的Github</span></a></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/5fc2235e/" title="StarUML教程">StarUML教程</a><time datetime="2023-01-22T08:00:00.000Z" title="发表于 2023-01-22 16:00:00">2023-01-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/82734d8/" title="Linux命令">Linux命令</a><time datetime="2023-01-20T16:00:00.000Z" title="发表于 2023-01-21 00:00:00">2023-01-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/caff8000/" title="Git常用命令">Git常用命令</a><time datetime="2023-01-18T16:00:00.000Z" title="发表于 2023-01-19 00:00:00">2023-01-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/38dd7363/" title="Vmware部署Ubuntu 20.04 Server">Vmware部署Ubuntu 20.04 Server</a><time datetime="2023-01-18T16:00:00.000Z" title="发表于 2023-01-19 00:00:00">2023-01-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/33f59116/" title="Typora常用命令">Typora常用命令</a><time datetime="2023-01-09T04:00:00.000Z" title="发表于 2023-01-09 12:00:00">2023-01-09</time></div></div></div></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">7</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2022-12-31T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">8.7k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-03-11T14:28:40.915Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Clear</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
+  getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js').then(() => {
+    jinrishici.load(result =>{
+      if (true) {
+        const sub = []
+        const content = result.data.content
+        sub.unshift(content)
+        window.typed = new Typed('#subtitle', {
+          strings: sub,
+          startDelay: 300,
+          typeSpeed: 150,
+          loop: true,
+          backSpeed: 50,
+        })
+      } else {
+        document.getElementById('subtitle').innerHTML = result.data.content
+      }
+    })
+  })
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}
+</script><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

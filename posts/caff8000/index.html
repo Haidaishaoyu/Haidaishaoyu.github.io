@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Git常用命令 | Clear's Blog</title><meta name="author" content="Clear"><meta name="copyright" content="Clear"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="Git常用命令Git安装下载git的exe安装包官网下载：https:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;win 淘宝镜像源下载：https:&#x2F;&#x2F;registry.npmmirror.com&#x2F;binary.html?path&#x3D;git-for-windows&#x2F; 安装git除了最开始选择安装组件那里建议不勾选添加那几个到右键菜单外，其余全部默认。 汉化Git Bash打开git bash 右">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Git常用命令">
+<meta property="og:url" content="https://www.clears.top/posts/caff8000/index.html">
+<meta property="og:site_name" content="Clear&#39;s Blog">
+<meta property="og:description" content="Git常用命令Git安装下载git的exe安装包官网下载：https:&#x2F;&#x2F;git-scm.com&#x2F;download&#x2F;win 淘宝镜像源下载：https:&#x2F;&#x2F;registry.npmmirror.com&#x2F;binary.html?path&#x3D;git-for-windows&#x2F; 安装git除了最开始选择安装组件那里建议不勾选添加那几个到右键菜单外，其余全部默认。 汉化Git Bash打开git bash 右">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230121214739.png">
+<meta property="article:published_time" content="2023-01-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-01-27T09:27:45.194Z">
+<meta property="article:author" content="Clear">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230121214739.png"><link rel="shortcut icon" href="https://hexo-1311224163.cos.ap-chengdu.myqcloud.com/favicon.png"><link rel="canonical" href="https://www.clears.top/posts/caff8000/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"自从上一次更新已经有","messageNext":"天了，文章的内容可能已经过时。"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Git常用命令',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-01-27 17:27:45'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://hexo-1311224163.cos.ap-chengdu.myqcloud.com/img%20(1).jpg" onerror="onerror=null;src='https://hexo-1311224163.cos.ap-chengdu.myqcloud.com/404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/dynamic/"><i class="fa-fw fas fa-list-alt"></i><span> 动态</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230121214739.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Clear's Blog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 目录</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/dynamic/"><i class="fa-fw fas fa-list-alt"></i><span> 动态</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Git常用命令</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-01-18T16:00:00.000Z" title="发表于 2023-01-19 00:00:00">2023-01-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-01-27T09:27:45.194Z" title="更新于 2023-01-27 17:27:45">2023-01-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">常用命令</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Git常用命令"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Git常用命令"><a href="#Git常用命令" class="headerlink" title="Git常用命令"></a>Git常用命令</h1><h2 id="Git安装"><a href="#Git安装" class="headerlink" title="Git安装"></a>Git安装</h2><h3 id="下载git的exe安装包"><a href="#下载git的exe安装包" class="headerlink" title="下载git的exe安装包"></a>下载git的exe安装包</h3><p>官网下载：<a target="_blank" rel="noopener" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
+<p>淘宝镜像源下载：<a target="_blank" rel="noopener" href="https://registry.npmmirror.com/binary.html?path=git-for-windows/">https://registry.npmmirror.com/binary.html?path=git-for-windows/</a></p>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>除了最开始选择安装组件那里建议不勾选添加那几个到右键菜单外，其余全部默认。</p>
+<h3 id="汉化Git-Bash"><a href="#汉化Git-Bash" class="headerlink" title="汉化Git Bash"></a>汉化Git Bash</h3><p>打开git bash</p>
+<p>右键——Options——Window——UI language——选择zh_CN</p>
+<p>然后点击Apply，Save，再次右键就能发现已经是中文了。</p>
+<h3 id="设置用户签名"><a href="#设置用户签名" class="headerlink" title="设置用户签名"></a>设置用户签名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;XXX&quot;</span> <span class="comment"># 设置用户名</span></span><br><span class="line">$ git config --global user.email <span class="string">&quot;XXXX&quot;</span> <span class="comment"># 设置邮箱</span></span><br></pre></td></tr></table></figure>
+<p><strong>说明</strong>：</p>
+<p>签名的作用是区分不同操作者身份。用户的签名信息在每一个版本的提交信息中能够看到，以此确认本次提交是谁做的。Git 首次安装必须设置一下用户签名，否则无法提交代码。</p>
+<p><strong>注意：</strong>这里设置用户签名和将来登录 GitHub（或其他代码托管中心）的账号没有任何关系。</p>
+<h3 id="设置初始分支名称"><a href="#设置初始分支名称" class="headerlink" title="设置初始分支名称"></a>设置初始分支名称</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global init.defaultBranch main</span><br></pre></td></tr></table></figure>
+<h2 id="Git命令汇总"><a href="#Git命令汇总" class="headerlink" title="Git命令汇总"></a>Git命令汇总</h2><ol>
+<li>clone（克隆）: 从远程仓库中克隆代码到本地仓库</li>
+<li>checkout （检出）:从本地仓库中检出一个仓库分支然后进行修订</li>
+<li>add（添加）: 在提交前先将代码提交到暂存区</li>
+<li>commit（提交）: 提交到本地仓库。本地仓库中保存修改的各个历史版本</li>
+<li>fetch (抓取) ： 从远程库抓取到本地仓库，不进行任何的合并动作，一般操作比较少。</li>
+<li>pull (拉取) ： 从远程库拉到本地库，自动进行合并(merge)，然后放到到工作区，相当于fetch+merge</li>
+<li>push（推送） : 修改完成后，需要和团队成员共享代码时，将代码推送到远程仓库</li>
+</ol>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p><strong>git init: 建立一个标准的git仓库</strong></p>
+<p>建立一个标准的Git仓库，这样的仓库初始化后，其项目目录为工作空间，其下的.git目录是版本控制器。可以正常的进行源文件的编写，提交等各种git常规操作。</p>
+<p><strong>git init —bare: 指定某个目录成为中心仓库（裸仓库）</strong></p>
+<p>通常，我们初始化远程服务器仓库时，使用git init —bare：建立一个“裸”的git仓库。这样的仓库初始化后，其项目目录下就是标准仓库.git目录里的内容，没有工作空间。<br>这个仓库只保存git历史提交的版本信息，而不允许用户在上面进行各种git操作（如：push、commit操作）。但是，你依旧可以使用git show命令查看提交内容。</p>
+<p><strong>git init —bare <repo></strong></p>
+<p>这个命令执行后，将在目录下创建一个名为 repo 的文件夹， 里面包含着 Git 的基本目录， 我们一般会将这个文件夹命名为后面加 .git 的形式，如 repo.git （<strong>这也是为什么我们从 GitHub clone 仓库的时候，地址都是 xxx.git 这样的形式的原因</strong>）。</p>
+<h3 id="分支操作"><a href="#分支操作" class="headerlink" title="分支操作"></a>分支操作</h3><p>git branch :查看本地分支</p>
+<p>git branch -v ：显示详细信息</p>
+<p>git branch 分支名 ：创建本地分支</p>
+<p>git checkout 分支名 ：切换到某分支</p>
+<p>git checkout -b 分支名 ：创建并切换到某分支</p>
+<p>git merge ：合并分支</p>
+<p>git branch -d 分支名 ：删除分支</p>
+<p>git branch -D 分支名 ：强制删除分支</p>
+<h3 id="远程操作"><a href="#远程操作" class="headerlink" title="远程操作"></a>远程操作</h3><p>git remote -v ：查看当前所有远程地址别名</p>
+<p>git remote add &lt;别名&gt; &lt;仓库地址&gt; ：添加远程仓库地址</p>
+<p>git push &lt;别名&gt; &lt;本地分支名&gt; ：推送本地分支到远程仓库</p>
+<p>git push -f —set-upstream &lt;别名&gt; &lt;本地分支名&gt;:&lt;远端分支名&gt; ： 强制覆盖远端仓库的分支并且与其建立联系</p>
+<p>-f 表示强制覆盖</p>
+<p>—set-upstream 推送到远端的同时并且建立起和远端分支的关联关系</p>
+<p>如果当前分支已经和远端分支关联，则可以省略分支名和远端名</p>
+<p>git clone &lt;仓库地址&gt; [本地目录] ：克隆到该目录下，可以省略，会自动生成一个目录</p>
+<p>git fetch &lt;别名&gt; &lt;本地分支名&gt;:&lt;本地分支名&gt; ：抓取命令，将仓库里的更新都抓取到本地，不进行合并，如果不指定远端名称和分支名称，则抓取所有分支</p>
+<p>git pull &lt;别名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt; : 抓取命令，将仓库里的更新都抓取到本地，进行合并，如果不指定远端名称和分支名称，则抓取所有分支</p>
+<h3 id="Git提交到远程仓库流程"><a href="#Git提交到远程仓库流程" class="headerlink" title="Git提交到远程仓库流程"></a>Git提交到远程仓库流程</h3><p>1.git init // 创建git仓库</p>
+<p>2.git add . // 工作区—&gt;暂存区</p>
+<p>3.git commit -m “first commit” // 暂存区—&gt;本地仓库</p>
+<p>4.git remote add origin xxx // 添加远程地址</p>
+<p>5.git push origin main // 提交到远程仓库</p>
+<h3 id="Git从远程仓库拉取流程"><a href="#Git从远程仓库拉取流程" class="headerlink" title="Git从远程仓库拉取流程"></a>Git从远程仓库拉取流程</h3><p>1.git clone xxx // 拉取远程仓库，若有则忽略这一步</p>
+<p>2.git pull origin main // 拉取远端main分支</p>
+<h2 id="idea集成Gitee"><a href="#idea集成Gitee" class="headerlink" title="idea集成Gitee"></a>idea集成Gitee</h2></article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/git/">git</a></div><div class="post_share"></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/38dd7363/"><img class="prev-cover" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230121212414.png" onerror="onerror=null;src='https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230109220048.png'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vmware部署Ubuntu 20.04 Server</div></div></a></div><div class="next-post pull-right"><a href="/posts/82734d8/"><img class="next-cover" src="https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230121221145.png" onerror="onerror=null;src='https://xingqiu-tuchuang-1256524210.cos.ap-shanghai.myqcloud.com/3691/20230109220048.png'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Linux命令</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">Git常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.</span> <span class="toc-text">Git安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BDgit%E7%9A%84exe%E5%AE%89%E8%A3%85%E5%8C%85"><span class="toc-number">1.1.1.</span> <span class="toc-text">下载git的exe安装包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85git"><span class="toc-number">1.1.2.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B1%89%E5%8C%96Git-Bash"><span class="toc-number">1.1.3.</span> <span class="toc-text">汉化Git Bash</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E7%94%A8%E6%88%B7%E7%AD%BE%E5%90%8D"><span class="toc-number">1.1.4.</span> <span class="toc-text">设置用户签名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E5%88%9D%E5%A7%8B%E5%88%86%E6%94%AF%E5%90%8D%E7%A7%B0"><span class="toc-number">1.1.5.</span> <span class="toc-text">设置初始分支名称</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E5%91%BD%E4%BB%A4%E6%B1%87%E6%80%BB"><span class="toc-number">1.2.</span> <span class="toc-text">Git命令汇总</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.2.1.</span> <span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C"><span class="toc-number">1.2.2.</span> <span class="toc-text">分支操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E6%93%8D%E4%BD%9C"><span class="toc-number">1.2.3.</span> <span class="toc-text">远程操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Git%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E6%B5%81%E7%A8%8B"><span class="toc-number">1.2.4.</span> <span class="toc-text">Git提交到远程仓库流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Git%E4%BB%8E%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E6%8B%89%E5%8F%96%E6%B5%81%E7%A8%8B"><span class="toc-number">1.2.5.</span> <span class="toc-text">Git从远程仓库拉取流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#idea%E9%9B%86%E6%88%90Gitee"><span class="toc-number">1.3.</span> <span class="toc-text">idea集成Gitee</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Clear</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
